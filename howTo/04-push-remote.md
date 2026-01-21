@@ -15,7 +15,7 @@ git branch
 
 ### 2. 리모트에 브랜치 푸시
 ```bash
-git push origin feature/your-feature-name
+git push origin learned/your-feature-name
 ```
 
 ### 3. 성공 확인
@@ -30,7 +30,7 @@ remote: Create a pull request for 'feature/your-feature-name' on GitHub by visit
 
 ### 첫 푸시 설정 (상류 브랜치 설정)
 ```bash
-git push -u origin feature/your-feature-name
+git push -u origin learned/your-feature-name
 ```
 
 ### 이후 푸시 (간단히)
@@ -51,7 +51,7 @@ git push
 ## ⚠️ 주의사항
 
 - `main` 브랜치로는 직접 푸시하지 마세요
-- 항상 본인의 `feature/` 브랜치로 푸시하세요
+- 항상 본인의 `learned/` 브랜치로 푸시하세요
 
 ## ✅ 확인 사항
 

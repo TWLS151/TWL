@@ -11,18 +11,18 @@ git status
 
 ### 2. develop 브랜치로 이동
 ```bash
-git checkout develop
+git checkout main
 ```
 
 ### 3. 최신 코드 동기화
 ```bash
-git pull origin develop
+git pull origin main
 ```
 
-### 4. 로컬 브랜치 삭제
+### 4. 로컬(내 컴퓨터에 있는) 브랜치 삭제
 ```bash
 # 단일 브랜치 삭제
-git branch -d feature/your-feature-name
+git branch -d learned/your-feature-name
 
 # 여러 브랜치 삭제
 git branch -D feature/old-branch
@@ -55,7 +55,7 @@ git branch -D feature/old-branch
                │
 ┌──────────────▼──────────────────────┐
 │  4. Push (리모트 업로드)            │
-│  git push origin feature/xxx        │
+│  git push origin learned/xxx        │
 └──────────────┬──────────────────────┘
                │
 ┌──────────────▼──────────────────────┐

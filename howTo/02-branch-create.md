@@ -5,20 +5,20 @@
 ## 📌 브랜치 네이밍 규칙
 
 ```
-feature/기능-이름
-feature/이름/주제
+learned/기능-이름
+learned/이름/주제
 ```
 
 ### 예시
-- `feature/til-write-python`
-- `feature/kim/algorithm-study`
-- `feature/docs/update-readme`
+- `learned/til-write-python`
+- `learned/kim/algorithm-study`
+- `learned/docs/update-readme`
 
 ## 🔧 실행 방법
 
 ### 1. develop 브랜치에서 새 브랜치 생성
 ```bash
-git checkout -b feature/your-feature-name
+git checkout -b learned/배운내용
 ```
 
 ### 2. 브랜치 생성 확인
@@ -32,12 +32,12 @@ git branch
 
 | 접두사 | 용도 | 예시 |
 |--------|------|------|
-| `feature/` | 새로운 기능/내용 추가 | `feature/python-study` |
-| `fix/` | 버그 수정 | `fix/readme-typo` |
+| `learned/` | 새로 배운 내용 | `learned/python-study` |
+| `fix/` | 내용 수정 | `fix/readme-typo` |
 | `docs/` | 문서 수정 | `docs/add-guide` |
 
 ## ✅ 확인사항
 
 - 현재 브랜치가 맞는지 확인
 - 브랜치명이 명확한지 확인
-- develop 브랜치에서 생성했는지 확인
+- main 브랜치에서 생성했는지 확인

@@ -8,28 +8,30 @@
 
 ## 🔧 실행 방법
 
-### 1. `develop` 브랜치로 이동
+### 1. `main` 브랜치로 이동
 ```bash
-git checkout develop
+git checkout main
 ```
 
 ### 2. 최신 코드 동기화
 ```bash
-git pull origin develop
+git pull origin main
 ```
 
 ## 📝 상세 설명
 
 - `git pull` = `git fetch` + `git merge`
-- 리모트의 최신 변경사항을 로컬에 반영합니다
-- 충돌이 발생할 수 있으니 주의하세요
+- 리모트(깃허브에 올라와있는)의 최신 변경사항을 로컬(내 컴퓨터)에 반영합니다
+- 커밋하지 않은 코드가 있을 경우 충돌이 발생할 수 있으니 주의하세요
 
 ## ✅ 완료 확인
 
 ```bash
 git log -1
 ```
-
+```bash
+git status
+```
 최신 커밋이 표시되면 성공입니다!
 
 ## 💡 팁

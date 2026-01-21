@@ -53,7 +53,7 @@ git pull origin develop
 ## 💡 병합 후 처리
 
 ### 브랜치 삭제 (GitHub)
-- PR 페이지의 "Delete branch" 버튼 클릭
+- **PR 페이지의 "Delete branch" 버튼 클릭** 
 
 ### 로컬 브랜치 삭제
 ```bash
@@ -70,5 +70,5 @@ git branch -d feature/your-feature-name
 
 ## ⚠️ 주의사항
 
-- develop 브랜치에만 병합하세요
-- 여러 명이 같은 브랜치에서 작업 중이면 주의하세요
+- main 브랜치에만 병합하세요
+- 항상 병합후 브랜치를 삭제하세요

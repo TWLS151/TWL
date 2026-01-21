@@ -18,8 +18,8 @@ https://github.com/your-org/TWL
 ### 3. "New Pull Request" 버튼 클릭
 
 ### 4. 브랜치 선택
-- Base: `develop` (병합 대상)
-- Compare: `feature/your-feature-name` (병합 할 브랜치)
+- Base: `main` (병합 대상)
+- Compare: `learned/your-feature-name` (병합 할 브랜치)
 
 ### 5. Pull Request 제목 작성
 ```
