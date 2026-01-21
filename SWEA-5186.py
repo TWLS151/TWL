@@ -18,3 +18,5 @@ for e in range(0,15):
         Binary.append(1)
 
 print(Binary, sep=' ')
+
+# 추가로 커밋하다가 일내서 리베이스 한 번 배웠습니다..
