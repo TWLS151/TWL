@@ -48,6 +48,7 @@ TWL/
 ## 👥 팀원
 
 - [한영욱](https://github.com/10wook)
+- [이현우](https://github.com/balbi-hw)
 - 여기에 마크다운을 활용해 본인 깃허브 링크를 걸어주세요.
 -
 -
