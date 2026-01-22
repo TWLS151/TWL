@@ -52,6 +52,7 @@ TWL/
 - [이현우](https://github.com/balbi-hw)
 - [손준혁](https://github.com/Junhyeok-Son)
 - [오규연](https://github.com/59raphyy-cloud)
+- [장수철](https://github.com/Apple7575)
 - 여기에 마크다운을 활용해 본인 깃허브 링크를 걸어주세요.
 -
 -
