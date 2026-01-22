@@ -1,0 +1,22 @@
+# import math
+
+def factorial(num):
+    if num == 0 or num == 1:
+        return 1
+    else:
+        return num * factorial(num - 1)
+
+T = int(input())
+for test_case in range(1, T + 1):
+    n = int(input())
+    result = 1
+    a = n//20
+    b = (n%20)/10
+    for i in range(1, a+1):
+    # b = n%20
+    # print(a)
+    # print(b)
+    # result += factorial(a+ b) / (factorial(a) * factorial(b))
+        result += (factorial(a+ b)/(factorial(a) * factorial(b)))*(2**a)
+    print(int(result))
+    # result += result*(2**(a-1))
