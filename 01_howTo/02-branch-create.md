@@ -33,8 +33,8 @@ git branch
 | 접두사 | 용도 | 예시 |
 |--------|------|------|
 | `learned/` | 새로 배운 내용 | `learned/python-study` |
-| `fix/` | 내용 수정 | `fix/readme-typo` |
 | `docs/` | 문서 수정 | `docs/add-guide` |
+| `fix/` | 내용 수정 | `fix/readme-typo` |
 
 ## ✅ 확인사항
 

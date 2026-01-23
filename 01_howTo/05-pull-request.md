@@ -28,7 +28,7 @@ https://github.com/your-org/TWL
 
 ### 예시
 ```
-[Feat] Python 기본 개념 TIL 추가
+[learned] Python 기본 개념 TIL 추가
 ```
 
 ## 📝 Pull Request 설명 작성
