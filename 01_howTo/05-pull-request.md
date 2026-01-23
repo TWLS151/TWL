@@ -28,7 +28,7 @@ https://github.com/your-org/TWL
 
 ### 예시
 ```
-[Feat] Python 기본 개념 TIL 추가
+[learned] Python 기본 개념 TIL 추가
 ```
 
 ## 📝 Pull Request 설명 작성
@@ -57,7 +57,7 @@ Closes #123
 - [ ] 제목이 명확한가?
 - [ ] 설명이 충분한가?
 - [ ] 불필요한 파일이 포함되지 않았나?
-- [ ] 기본 브랜치가 develop으로 설정되었나?
+- [ ] 기본 브랜치가 main으로 설정되었나?
 
 ## 💬 리뷰 요청하기
 
