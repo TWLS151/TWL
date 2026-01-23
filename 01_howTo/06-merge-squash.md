@@ -1,6 +1,6 @@
 # 6단계: Pull Request 스쿼시 앤 머지
 
-승인된 Pull Request를 스쿼시 앤 머지로 develop 브랜치에 병합합니다.
+승인된 Pull Request를 스쿼시 앤 머지로 main 브랜치에 병합합니다.
 
 ## 📌 스쿼시 앤 머지란?
 
@@ -43,11 +43,11 @@ GitHub의 PR 페이지
 병합 후 로컬에서:
 
 ```bash
-# develop 브랜치로 이동
-git checkout develop
+# main 브랜치로 이동
+git checkout main
 
 # 최신 코드 동기화
-git pull origin develop
+git pull origin main
 ```
 
 ## 💡 병합 후 처리
