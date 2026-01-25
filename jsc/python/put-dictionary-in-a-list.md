@@ -12,7 +12,7 @@ TS
   ex: list_name.append(data.items('company'))
   reuslt: items는 key값을 특별하게 지정을 할 수가 없다.
   - [o]try2: ('key': 'value')로 append
-  ex: list_name.appen('company': data.get('company'))
+  ex: list_name.appen({'company': data.get('company')})
   result: success
 - R
   - list에 dictionary형태로 넣을 때에는 'key': 'value' 형태로 넣자

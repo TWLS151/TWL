@@ -18,4 +18,3 @@ git rebase -i HEAD~[범위]
 2. 이미 push된 커밋 되돌리기 (git revert)
 기존 이력을 남기면서 반대되는 커밋 추가...??
 git revert [커밋ID]
-
