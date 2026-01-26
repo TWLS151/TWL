@@ -55,6 +55,7 @@ TWL/
 - [장수철](https://github.com/Apple7575)
 - [나대현](https://github.com/growth12)
 - [이창준](https://github.com/Junch-Lee)
+- [임지영](https://github.com/limji02)
 - 여기에 마크다운을 활용해 본인 깃허브 링크를 걸어주세요.
 -
 -
