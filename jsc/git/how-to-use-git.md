@@ -28,7 +28,7 @@ git commit -m '[commit_message]'
 ## 깃 서명
 git config
 
-## 깃 자격
+## 깃 자격증명
 git credential
 
 ## 깃 가져오기
@@ -40,3 +40,4 @@ git branch
 
 ## 브랜치 생성
 git switch -c [branch_name]
+

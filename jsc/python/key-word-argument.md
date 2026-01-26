@@ -6,4 +6,6 @@
 def function_name(name, age):
     print(f'나의 이름은 {name}, {age}입니다.')
 
-function_name(age, 'name': '파이썬')
+function_name(age, name: '파이썬')
+```
+
