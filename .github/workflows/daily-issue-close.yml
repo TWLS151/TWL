@@ -3,7 +3,7 @@ name: Daily Issue Close
 on:
   schedule:
     # 매일 오후 11시(UTC)에 실행 (한국시간 다음날 오전 8시)
-    - cron: '23 * * * *'
+    - cron: '0 23 * * *'
   workflow_dispatch:  # 수동 트리거 옵션
 
 jobs:
