@@ -1,0 +1,63 @@
+name: Daily Issue Close
+
+on:
+  schedule:
+    # 매일 오후 11시(UTC)에 실행 (한국시간 다음날 오전 8시)
+    - cron: '0 23 * * *'
+  workflow_dispatch:  # 수동 트리거 옵션
+
+jobs:
+  close-daily-issue:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      contents: read
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Get yesterday's date
+        id: date
+        run: echo "yesterday=$(date -d 'yesterday' +'%Y-%m-%d')" >> $GITHUB_OUTPUT
+
+      - name: Find and close yesterday's daily issue
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const yesterday = '${{ steps.date.outputs.yesterday }}';
+            const searchTitle = `📝 Daily TIL - ${yesterday}`;
+            
+            // 어제의 이슈 찾기
+            const issues = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              labels: 'daily-til'
+            });
+            
+            const dailyIssue = issues.data.find(issue => 
+              issue.title.includes(yesterday)
+            );
+            
+            if (dailyIssue) {
+              // 이슈 종료
+              await github.rest.issues.update({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: dailyIssue.number,
+                state: 'closed'
+              });
+              
+              // 종료 댓글 추가
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: dailyIssue.number,
+                body: `✅ Daily learning log for ${yesterday} has been completed and closed.\n\n*This issue was automatically closed.*`
+              });
+              
+              console.log(`✅ Issue #${dailyIssue.number} closed: ${dailyIssue.title}`);
+            } else {
+              console.log(`ℹ️ No open issue found for ${yesterday}`);
+            }

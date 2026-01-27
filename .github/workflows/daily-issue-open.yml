@@ -1,0 +1,60 @@
+name: Daily Issue Open
+
+on:
+  schedule:
+    # 매일 오전 9시(UTC)에 실행 (한국시간 오후 6시)
+    - cron: '0 9 * * *'
+  workflow_dispatch:  # 수동 트리거 옵션
+
+jobs:
+  open-daily-issue:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      contents: read
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Get today's date
+        id: date
+        run: echo "today=$(date +'%Y-%m-%d')" >> $GITHUB_OUTPUT
+
+      - name: Create daily issue
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const today = '${{ steps.date.outputs.today }}';
+            const title = `📝 Daily TIL - ${today}`;
+            const body = `## 📅 Today's Learning
+            
+Date: ${today}
+
+### ✍️ What I learned today:
+- [ ] 학습 내용 1
+- [ ] 학습 내용 2
+- [ ] 학습 내용 3
+
+### 📚 Resources:
+- 자료 링크 1
+- 자료 링크 2
+
+### 🎯 Tomorrow's Goal:
+- 내일 공부할 내용 작성
+
+### 💡 Notes:
+자유롭게 메모 작성
+
+---
+*This issue was automatically created for today's learning log.*`;
+            
+            const issue = await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: title,
+              body: body,
+              labels: ['daily-til', 'auto-generated']
+            });
+            
+            console.log(`✅ Issue created: ${issue.data.html_url}`);
