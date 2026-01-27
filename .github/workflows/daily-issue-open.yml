@@ -27,27 +27,29 @@ jobs:
           script: |
             const today = '${{ steps.date.outputs.today }}';
             const title = `📝 Daily TIL - ${today}`;
-            const body = `## 📅 Today's Learning
-            
-Date: ${today}
-
-### ✍️ What I learned today:
-- [ ] 학습 내용 1
-- [ ] 학습 내용 2
-- [ ] 학습 내용 3
-
-### 📚 Resources:
-- 자료 링크 1
-- 자료 링크 2
-
-### 🎯 Tomorrow's Goal:
-- 내일 공부할 내용 작성
-
-### 💡 Notes:
-자유롭게 메모 작성
-
----
-*This issue was automatically created for today's learning log.*`;
+            const body = [
+              `## 📅 Today's Learning`,
+              ``,
+              `Date: ${today}`,
+              ``,
+              `### ✍️ What I learned today:`,
+              `- [ ] 학습 내용 1`,
+              `- [ ] 학습 내용 2`,
+              `- [ ] 학습 내용 3`,
+              ``,
+              `### 📚 Resources:`,
+              `- 자료 링크 1`,
+              `- 자료 링크 2`,
+              ``,
+              `### 🎯 Tomorrow's Goal:`,
+              `- 내일 공부할 내용 작성`,
+              ``,
+              `### 💡 Notes:`,
+              `자유롭게 메모 작성`,
+              ``,
+              `---`,
+              `*This issue was automatically created for today's learning log.*`
+            ].join('\n');
             
             const issue = await github.rest.issues.create({
               owner: context.repo.owner,
