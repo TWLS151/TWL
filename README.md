@@ -58,6 +58,7 @@ TWL/
 - [이창준](https://github.com/Junch-Lee)
 - [임지영](https://github.com/limji02)
 - [조다영](https://github.com/dayoungcho)
+- [백승우](https://github.com/bsw1206)
 - 여기에 마크다운을 활용해 본인 깃허브 링크를 걸어주세요.
 -
 -
