@@ -2,8 +2,8 @@ name: Daily Issue Open
 
 on:
   schedule:
-    # 매일 오전 9시(UTC)에 실행 (한국시간 오후 6시)
-    - cron: '0 9 * * *'
+    # 매일 21시(UTC)에 실행 (한국시간 다음날 오전 6시)
+    - cron: '0 21 * * *'
   workflow_dispatch:  # 수동 트리거 옵션
 
 jobs:
