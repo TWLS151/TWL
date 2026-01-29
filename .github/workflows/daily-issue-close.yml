@@ -17,9 +17,9 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Get yesterday's date
+      - name: Get yesterday's date (KST)
         id: date
-        run: echo "yesterday=$(date -d 'yesterday' +'%Y-%m-%d')" >> $GITHUB_OUTPUT
+        run: echo "yesterday=$(TZ=Asia/Seoul date -d 'yesterday' +'%Y-%m-%d')" >> $GITHUB_OUTPUT
 
       - name: Find and close yesterday's daily issue
         uses: actions/github-script@v6
