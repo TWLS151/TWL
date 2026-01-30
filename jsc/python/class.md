@@ -114,10 +114,3 @@ account.deposit(500)
 print(account.get_balance())  # 1500
 # print(account.__balance)    # AttributeError 발생
 ```
-
-## 정리
-- `class`: 객체의 설계도
-- `__init__`: 생성자
-- `self`: 인스턴스 자신
-- 상속으로 코드 재사용
-- `__`로 시작하는 속성은 외부 접근 제한
