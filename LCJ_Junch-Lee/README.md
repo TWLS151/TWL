@@ -7,23 +7,23 @@
 ---
 ## Roadmap 
 
-### [Python](./Python/)
+### [Python](./Learned/Python/)
 
-- [Basic_Syntax](./Python/Basic_Syntax/)
+- [Basic_Syntax](./Learned/Python/Basic_Syntax/)
 
-- [Functions](./Python/Functions/)
+- [Functions](./Learned/Python/Functions/)
 
-- [Control_of_flow](./Python/Control_of_flow/)
+- [Control_of_flow](./Learned/Python/Control_of_flow/)
 
-- [Class](./Python/Class/)
+- [Class](./Learned/Python/Class_OOP/)
 
-### [Git](./Git/)
+### [Git](./Learned/Git/)
 
 ### [Algorithm](./Algorithm/)
 
-- [SWEA](./Algorithm/SWEA)
+- [SWEA](./Algorithm/SWEA/)
 
-- [Baekjoon](./Algorithm/Baekjoon)
+- [Baekjoon](./Algorithm/Baekjoon/)
 
 ### [PJT](./PJT/)
 
