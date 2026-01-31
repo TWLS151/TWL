@@ -1,8 +1,10 @@
 # Today I Learned
 
-https://TWLS151.github.io/TWL/jsc/
+웹페이지 https://TWLS151.github.io/TWL/
 
 매일 배운 것을 기록하는 개인 위키입니다.
+
+지금은 한국어로 쓰지만 추후에 익숙해지면 영어로 작성할 예정입니다.
 
 ## 카테고리
 
@@ -11,14 +13,6 @@ https://TWLS151.github.io/TWL/jsc/
 - **Algorithm** - 알고리즘 문제 풀이
 - **Error Log** - 에러 해결 기록
 
-## 로컬에서 실행
-
-```bash
-npm install
-npm start
-```
-
-http://localhost:3000/TWL/jsc/ 에서 확인
 
 ## 빌드 및 배포
 
@@ -26,12 +20,6 @@ http://localhost:3000/TWL/jsc/ 에서 확인
 
 `main` 브랜치에 push하면 자동으로 GitHub Pages에 배포됩니다.
 
-### 직접 배포
-
-```bash
-npm run build
-npm run deploy
-```
 
 ## 기술 스택
 
@@ -39,6 +27,3 @@ npm run deploy
 - TypeScript
 - GitHub Pages
 
-## 작성자
-
-[@jsc](https://github.com/TWLS151)
