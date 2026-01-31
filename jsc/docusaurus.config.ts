@@ -8,7 +8,7 @@ const config: Config = {
   favicon: 'img/favicon.ico',
 
   url: 'https://TWLS151.github.io',
-  baseUrl: '/TWL/jsc/',
+  baseUrl: '/TWL/',
 
   organizationName: 'TWLS151',
   projectName: 'TWL',
