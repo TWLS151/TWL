@@ -1,5 +1,6 @@
 ---
 title: "upper function은 원본을 바꾸지 않는다"
+date: 2026-01-26
 tags: [python]
 authors: jsc
 description: "def capitalize_words(a):"

@@ -2,7 +2,11 @@
 sidebar_position: 1
 ---
 
+import ActivityCalendar from '@site/src/components/ActivityCalendar';
+
 # Welcome to My TIL
+
+<ActivityCalendar />
 
 **TIL (Today I Learned)** 은 매일 배운 것을 기록하는 공간입니다.
 

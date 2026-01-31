@@ -1,0 +1,94 @@
+{
+  "2026-01-26": [
+    {
+      "title": "재미있는거 정리",
+      "path": "/docs/Inbox/Easter-Egg/fun"
+    },
+    {
+      "title": "swea_4869",
+      "path": "/docs/algorithm-study/Week-01/swea-4869"
+    },
+    {
+      "title": "swea-5183-2",
+      "path": "/docs/algorithm-study/Week-01/swea-5186"
+    },
+    {
+      "title": "반복문에서 string에 숫자를 추가하기",
+      "path": "/docs/algorithm-study/Week-01/ws-04-04"
+    },
+    {
+      "title": "test",
+      "path": "/docs/algorithm-study/Week-02/test"
+    },
+    {
+      "title": "two-dimensional-list",
+      "path": "/docs/error-log/two-dimensional-list"
+    },
+    {
+      "title": "깃 기본 사용법",
+      "path": "/docs/git/how-to-use-git"
+    },
+    {
+      "title": "class",
+      "path": "/docs/python/class"
+    },
+    {
+      "title": "print와 return 값의 차이",
+      "path": "/docs/python/difference-between-print-and-return-value"
+    },
+    {
+      "title": "Function",
+      "path": "/docs/python/function"
+    },
+    {
+      "title": "키워드 인자",
+      "path": "/docs/python/key-word-argument"
+    },
+    {
+      "title": "지역변수 에러",
+      "path": "/docs/python/localparamete"
+    },
+    {
+      "title": "method-join-pop",
+      "path": "/docs/python/method-join-pop"
+    },
+    {
+      "title": "Put-Dictionay-In-A-List",
+      "path": "/docs/python/put-dictionary-in-a-list"
+    },
+    {
+      "title": "range(), set",
+      "path": "/docs/python/range-set"
+    },
+    {
+      "title": "여러번의 append를 객체로 리펙토링",
+      "path": "/docs/python/refactor-multiple-appends-to-object"
+    },
+    {
+      "title": "얕은 복사의 에러",
+      "path": "/docs/python/shallow-copy-error"
+    },
+    {
+      "title": "upper function은 원본을 바꾸지 않는다",
+      "path": "/docs/python/upper-function"
+    }
+  ],
+  "2026-01-24": [
+    {
+      "title": "Git Multiple PR Workflow",
+      "path": "/docs/git/git-multiple-pr-workflow-management"
+    }
+  ],
+  "2026-01-25": [
+    {
+      "title": "Git 커밋 취소 및 관리 방법",
+      "path": "/docs/git/how-to-undo-commit"
+    }
+  ],
+  "2026-01-20": [
+    {
+      "title": "리스트, 튜플, 딕셔너리",
+      "path": "/docs/python/list-tuple-dictionary"
+    }
+  ]
+}

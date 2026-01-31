@@ -1,5 +1,6 @@
 ---
 title: "class"
+date: 2026-01-26
 tags: [python]
 authors: jsc
 description: "class Person:"
