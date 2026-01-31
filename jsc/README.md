@@ -1,61 +1,44 @@
-# TIL
+# Today I Learned
 
-> Today I Learned
+https://TWLS151.github.io/TWL/jsc/
 
-> 파이썬에 대해서 아는게 거의 없지만 매일 하나씩 꾸준하게 올리면서 성실함을 보이는게 목표입니다.  
-배운 내용들을 컨텐츠별로 구분을 해서 올릴 생각입니다.  
-영어공부도 하고 싶어서 익숙해지면 영어로 올리겠습니다.  
-거창하게 쓰지 말기.  
-추후에 github actions을 이용해서 README 목차 자동업데이트 하기.
+매일 배운 것을 기록하는 개인 위키입니다.
 
+## 카테고리
 
----
-## Categories
-- [TIL](#til)
-  - [Categories](#categories)
-    - [Python](#python)
-    - [Git](#git)
-    - [Inbox](#inbox)
-  - [ToDoList](#todolist)
-    - [종이에 필기 및 TIL 옮기기 가이드](#종이에-필기-및-til-옮기기-가이드)
+- **Python** - 파이썬 문법, 함수, 클래스
+- **Git** - Git 사용법, 워크플로우
+- **Algorithm** - 알고리즘 문제 풀이
+- **Error Log** - 에러 해결 기록
 
+## 로컬에서 실행
 
----
-### Python
+```bash
+npm install
+npm start
+```
 
+http://localhost:3000/TWL/jsc/ 에서 확인
 
-### Git
+## 빌드 및 배포
 
+### GitHub Actions (자동)
 
-### Inbox
+`main` 브랜치에 push하면 자동으로 GitHub Pages에 배포됩니다.
 
+### 직접 배포
 
+```bash
+npm run build
+npm run deploy
+```
 
+## 기술 스택
 
----
+- [Docusaurus](https://docusaurus.io/) - 정적 사이트 생성기
+- TypeScript
+- GitHub Pages
 
+## 작성자
 
-## ToDoList
-- [ ] 바이브 코딩 할 때 검증을 하는 방법 공부하기
-- [ ] 리드미 대시보드 자동화
-    [예시: README.md에 자동으로 그려질 대시보드 형태] | 날짜 | 카테고리 | 주제 | 링크 | | :--- | :--- | :--- | :--- | | 2026-01-26 | Git | Cherry-pick 활용법 | Link | | 2026-01-25 | Java | JVM 메모리 구조 | Link | | 2026-01-24 | Python | List Comprehension | Link |
-
-    README 대시보드 자동화 구현 방법
-    개발자들이 만든 TIL-auto-readme 같은 스크립트가 있습니다.
-    동작 원리: * 새로운 .md 파일을 폴더에 넣고 Push합니다.
-    GitHub Actions가 이 파일을 감지해서 파일명에서 날짜와 제목을 추출합니다.
-    최상위 README.md에 최신순으로 표를 다시 그려서 자동으로 커밋해줍니다.
-    구체적인 적용 방법:
-    Python이나 Node.js로 된 간단한 스크립트를 저장소에 넣어둡니다.
-    .github/workflows/main.yml 파일을 만들어 "푸시할 때마다 스크립트 실행" 명령을 내립니다.
-
-
----
-### 종이에 필기 및 TIL 옮기기 가이드
-1. A4용지를 반으로 접어 사용, 종이 바깥쪽만 사용, 
-안쪽을 사용하지 않음(나중에 종이 어디가 앞인지 뒤인지 구분하다가 시간 다 써서 한쪽면만 씀)
-2. 좌측 상단에 제목적기, 제목은 빨간색으로 네모로 감싸기
-3. 우측 상단에 '#1', '26-01-25'처럼 A4용지 몇번째인지 넘버링, 날짜 빨간색으로 적기
-4. 헤더들은 빨간색 밑줄하기
-5. 하루 마무리 할 때 종이 내용 컴퓨터 그리고 TIL에 옮기기
-6. 옮긴 종이는 'x'표 크게 하기
+[@jsc](https://github.com/TWLS151)
