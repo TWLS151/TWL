@@ -1,5 +1,6 @@
 ---
 title: "method-join-pop"
+date: 2026-01-26
 tags: [python]
 authors: jsc
 description: "def restructure_word(word, arr):"

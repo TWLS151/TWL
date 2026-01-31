@@ -1,5 +1,6 @@
 ---
 title: "여러번의 append를 객체로 리펙토링"
+date: 2026-01-26
 tags: [python]
 authors: jsc
 description: "26-01-25"

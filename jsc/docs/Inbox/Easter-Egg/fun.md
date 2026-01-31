@@ -1,5 +1,6 @@
 ---
 title: "재미있는거 정리"
+date: 2026-01-26
 tags: [inbox]
 authors: jsc
 description: "자허블: 자몽 허니 블랙티"

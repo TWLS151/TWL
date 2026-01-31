@@ -28,6 +28,7 @@ const config: Config = {
         docs: {
           sidebarPath: './sidebars.ts',
           editUrl: 'https://github.com/TWLS151/TWL/tree/master/jsc/',
+          sidebarCollapsed: true,
         },
         blog: {
           showReadingTime: true,
@@ -74,11 +75,6 @@ const config: Config = {
           sidebarId: 'tutorialSidebar',
           position: 'left',
           label: 'Docs',
-        },
-        {
-          to: '/blog',
-          label: 'Blog',
-          position: 'left',
         },
         {
           href: 'https://github.com/TWLS151/TWL/tree/master/jsc',

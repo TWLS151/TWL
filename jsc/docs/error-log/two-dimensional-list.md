@@ -1,5 +1,6 @@
 ---
 title: "two-dimensional-list"
+date: 2026-01-26
 tags: [error-log]
 authors: jsc
 description: "for a in range(N):"

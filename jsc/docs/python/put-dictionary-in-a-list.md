@@ -1,5 +1,6 @@
 ---
 title: "Put-Dictionay-In-A-List"
+date: 2026-01-26
 tags: [python]
 authors: jsc
 description: "TS"
