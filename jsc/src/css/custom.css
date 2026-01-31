@@ -1,0 +1,363 @@
+/* ===========================================
+   JSC TIL - Custom Design System
+   파랑-보라 그라데이션 테마
+   =========================================== */
+
+/* Google Fonts - Pretendard */
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+:root {
+  /* Primary Colors - 파랑-보라 그라데이션 */
+  --ifm-color-primary: #6366f1;
+  --ifm-color-primary-dark: #4f46e5;
+  --ifm-color-primary-darker: #4338ca;
+  --ifm-color-primary-darkest: #3730a3;
+  --ifm-color-primary-light: #818cf8;
+  --ifm-color-primary-lighter: #a5b4fc;
+  --ifm-color-primary-lightest: #c7d2fe;
+
+  /* Accent Colors */
+  --color-accent: #8b5cf6;
+  --color-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --color-gradient-text: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+
+  /* Typography */
+  --ifm-font-family-base: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --ifm-font-family-monospace: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+  --ifm-code-font-size: 90%;
+  --ifm-heading-font-weight: 700;
+
+  /* Spacing & Sizing */
+  --ifm-spacing-horizontal: 1.5rem;
+  --ifm-navbar-height: 4rem;
+
+  /* Code Block */
+  --docusaurus-highlighted-code-line-bg: rgba(99, 102, 241, 0.1);
+  --ifm-code-border-radius: 8px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+
+  /* Border Radius */
+  --ifm-global-radius: 8px;
+  --ifm-button-border-radius: 8px;
+}
+
+/* Dark Mode */
+[data-theme='dark'] {
+  --ifm-color-primary: #818cf8;
+  --ifm-color-primary-dark: #6366f1;
+  --ifm-color-primary-darker: #4f46e5;
+  --ifm-color-primary-darkest: #4338ca;
+  --ifm-color-primary-light: #a5b4fc;
+  --ifm-color-primary-lighter: #c7d2fe;
+  --ifm-color-primary-lightest: #e0e7ff;
+
+  --ifm-background-color: #0f172a;
+  --ifm-background-surface-color: #1e293b;
+  --docusaurus-highlighted-code-line-bg: rgba(129, 140, 248, 0.2);
+}
+
+/* ===========================================
+   Typography
+   =========================================== */
+body {
+  font-family: var(--ifm-font-family-base);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: var(--ifm-heading-font-weight);
+}
+
+/* ===========================================
+   Navbar
+   =========================================== */
+.navbar {
+  box-shadow: var(--shadow-sm);
+  backdrop-filter: blur(8px);
+}
+
+.navbar__title {
+  font-weight: 700;
+  background: var(--color-gradient-text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.navbar__link:hover {
+  color: var(--ifm-color-primary);
+}
+
+/* ===========================================
+   Sidebar
+   =========================================== */
+.menu__link {
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.menu__link:hover {
+  background: rgba(99, 102, 241, 0.1);
+}
+
+.menu__link--active {
+  background: rgba(99, 102, 241, 0.15);
+  font-weight: 600;
+}
+
+/* Category Labels */
+.menu__list-item-collapsible > .menu__link {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  color: var(--ifm-color-primary);
+}
+
+/* ===========================================
+   Article Content
+   =========================================== */
+article {
+  max-width: 800px;
+}
+
+.markdown h1:first-child {
+  font-size: 2.25rem;
+  margin-bottom: 1.5rem;
+  background: var(--color-gradient-text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.markdown > h2 {
+  font-size: 1.5rem;
+  margin-top: 2.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--ifm-color-primary-lightest);
+}
+
+.markdown > h3 {
+  font-size: 1.25rem;
+  margin-top: 2rem;
+}
+
+/* ===========================================
+   Code Blocks
+   =========================================== */
+code {
+  border-radius: 4px;
+  padding: 0.2em 0.4em;
+  font-family: var(--ifm-font-family-monospace);
+}
+
+/* Inline Code */
+:not(pre) > code {
+  background: rgba(99, 102, 241, 0.1);
+  color: var(--ifm-color-primary-dark);
+  border: 1px solid rgba(99, 102, 241, 0.2);
+}
+
+[data-theme='dark'] :not(pre) > code {
+  background: rgba(129, 140, 248, 0.15);
+  color: var(--ifm-color-primary-light);
+  border: 1px solid rgba(129, 140, 248, 0.3);
+}
+
+/* Code Block Container */
+pre {
+  border-radius: var(--ifm-code-border-radius);
+  box-shadow: var(--shadow-md);
+}
+
+.prism-code {
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+/* ===========================================
+   Tags
+   =========================================== */
+.tag {
+  background: var(--color-gradient);
+  color: white;
+  border-radius: 9999px;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+/* ===========================================
+   Buttons
+   =========================================== */
+.button--primary {
+  background: var(--color-gradient);
+  border: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.button--primary:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* ===========================================
+   Table of Contents
+   =========================================== */
+.table-of-contents__link {
+  font-size: 0.875rem;
+  transition: color 0.2s ease;
+}
+
+.table-of-contents__link--active {
+  color: var(--ifm-color-primary);
+  font-weight: 600;
+}
+
+/* ===========================================
+   Footer
+   =========================================== */
+.footer {
+  background: var(--ifm-background-surface-color);
+}
+
+.footer--dark {
+  background: #0f172a;
+}
+
+/* ===========================================
+   Scrollbar (Webkit)
+   =========================================== */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--ifm-color-primary-lighter);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--ifm-color-primary);
+}
+
+/* ===========================================
+   Animations
+   =========================================== */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.markdown {
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* ===========================================
+   Blog Post Meta
+   =========================================== */
+.blog-post-meta {
+  display: flex;
+  gap: 1rem;
+  color: var(--ifm-color-emphasis-600);
+  font-size: 0.875rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+
+/* ===========================================
+   Doc Item Metadata
+   =========================================== */
+.theme-doc-markdown {
+  margin-top: 1rem;
+}
+
+/* Reading Time Badge */
+.reading-time {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.75rem;
+  color: var(--ifm-color-emphasis-600);
+}
+
+/* ===========================================
+   Tags Page Styling
+   =========================================== */
+.docTagsListPage {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.docTagsListPage h1 {
+  background: var(--color-gradient-text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Tag List Items */
+.tag_2Elg {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%);
+  color: var(--ifm-color-primary);
+  border-radius: 9999px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  margin: 0.25rem;
+}
+
+.tag_2Elg:hover {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
+/* Tag Document List */
+.docTagDocListPage {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.docTagDocListPage h1 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.docTagDocListPage h1::before {
+  content: '#';
+  background: var(--color-gradient-text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Document Cards in Tag Page */
+article.margin-bottom--xl {
+  padding: 1.5rem;
+  background: var(--ifm-card-background-color);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+}
+
+article.margin-bottom--xl:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(99, 102, 241, 0.1);
+  border-color: var(--ifm-color-primary-lighter);
+}
