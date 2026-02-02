@@ -35,7 +35,7 @@
 ### 슈도 코드
 
 ```python
-for i in range(N-1, 1, -1):
+for i in range(N-1, 0, -1):
 
   for j in range(i): # 왜 i일까?
 
