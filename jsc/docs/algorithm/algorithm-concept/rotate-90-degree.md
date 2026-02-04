@@ -1,0 +1,1 @@
+rotated_90_right = list(map(list, zip(*arr[::-1])))
