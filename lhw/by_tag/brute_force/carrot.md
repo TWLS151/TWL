@@ -1,6 +1,10 @@
 # SWEA - 16811
 # 당근
 
+
+
+# BRUTE FORCE
+```python
 # 당근을 박스에 나눠 담는 함수
 # AI 는 실제로 리스트를 만들어서 담을 필요 없이
 # 문제에서 요구하는 '개수 차이'를 구하기 위한 개수만 구하는 게 더 좋다는 평가
@@ -70,6 +74,7 @@ for test_case in range(1, TC+1):
 
 
     print(f'#{test_case} {min(diff)}')        
+```
     
 
             
@@ -79,8 +84,9 @@ for test_case in range(1, TC+1):
 
 
 
-
-
+# collections 모듈을 활용했던 기록
+## 실력부족으로 실패
+```python
 #     small = []
 #     middle = []
 #     big = []
@@ -137,3 +143,4 @@ for test_case in range(1, TC+1):
 
 
 # # 1. 개수 분기를 size_dict 기준으로 했다
+```
