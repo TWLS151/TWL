@@ -2,8 +2,8 @@
 # 러시아 국기 같은 깃발
 # TTP: 58'16"
 
-import sys
-sys.stdin = open('like_russian.txt')
+# import sys
+# sys.stdin = open('like_russian.txt')
 
 TC = int(input())
 
@@ -12,14 +12,15 @@ for test_case in range(1, TC+1):
     flag = [input() for _ in range(height)]
     
     min_count = 10**99
-    for i in range(height - 2):
-        for j in range(i+1, height - 1):
-
+    # 적어도 한줄씩은 있어야한다.
+    for i in range(height-2):
+        for j in range(i+1, height-1):
             count = 0
 
             W = [flag[x] for x in range(i+1)]
             B = [flag[x] for x in range(i+1, j+1)]
-            R = [flag[x] for x in range(j+1, height)]
+            R = [flag[x] for x in range(j+1,height)]
+            # 다 나눠졌다.
 
             for w in W:
                 count += width - w.count('W')
@@ -27,11 +28,52 @@ for test_case in range(1, TC+1):
                 count += width - b.count('B')
             for r in R:
                 count += width - r.count('R')
-            
+
             if min_count > count:
                 min_count = count
-    
+
     print(f'#{test_case} {min_count}')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    # min_count = 10**99
+    # for i in range(height - 2):
+    #     for j in range(i+1, height - 1):
+
+    #         count = 0
+
+    #         W = [flag[x] for x in range(i+1)]
+    #         B = [flag[x] for x in range(i+1, j+1)]
+    #         R = [flag[x] for x in range(j+1, height)]
+
+    #         for w in W:
+    #             count += width - w.count('W')
+    #         for b in B:
+    #             count += width - b.count('B')
+    #         for r in R:
+    #             count += width - r.count('R')
+            
+    #         if min_count > count:
+    #             min_count = count
+    
+    # print(f'#{test_case} {min_count}')
 
 
 
