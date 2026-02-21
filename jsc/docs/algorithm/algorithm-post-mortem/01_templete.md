@@ -36,3 +36,4 @@ import sys
 # 정답 코드
 def solve():
     pass
+
