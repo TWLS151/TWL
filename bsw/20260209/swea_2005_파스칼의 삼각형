@@ -1,0 +1,21 @@
+import sys
+
+sys.stdin = open('swea_2005_파스칼의 삼각형.txt')
+
+T = int(input())
+for tc in range(1, T + 1):
+    N = int(input())
+    num_lst = [[0] * (N+1) for _ in range(N+1)]
+    num_lst[1][1] = 1
+    for r in range(2, N + 1): # 1은 계산했으니 2부터
+        for c in range(1, N + 1):
+            num_lst[r][c] = num_lst[r-1][c] + num_lst[r-1][c-1]
+            # 현재 값은 바로 위의 값과 왼쪽 위의 값을 더한 것 
+    print(f'#{tc}') 
+    # num_lst에 0을 제거하는 과정
+    for i in range(1, N + 1): # num_lst의 각 가로줄을 순회
+        result = []
+        for n in num_lst[i]:
+            if n != 0:
+                result.append(n) # 0이 아닌 경우에만 추가
+        print(*result)
