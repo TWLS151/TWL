@@ -37,7 +37,7 @@ def build(node, start, end):
     tree[node] = tree[node * 2] + tree[node * 2 + 1]
 
 
-def update(node, start, end, index, diff):
+def update(node, start, end, index, diff): # 내 자리들을 찾아가면서 차이를 엄데이트 해준다.
     if index < start or index > end:
         return
     
@@ -54,12 +54,12 @@ def query(node, start, end, left, right):
     
     if right < start or left > end:
         return 0
-    
+    #짤려서 들어온 결과가 원하는 부분 안쪽에 있다면? 나를 출력해라....
     if left <= start and end <= right:
         return tree[node]
     
     mid = (start + end) // 2
-    
+    # 완전히 포함 되어있는게 아니라면 반으로 나눠서 또 물어봐야지 모
     return query(node * 2, start, mid, left, right) + \
            query(node * 2 + 1, mid + 1, end, left, right)
 
@@ -85,3 +85,10 @@ for _ in range(M + K):
 ```
 
 뭐가 어찌 되었건 이 부분은 제가 결국 손으로 한번 울면서 클론 코딩이라도 해야만 이해가 될 것 같은 부분이라 내일 공부를 하면서 해보도록하겠습니다.
+
+
+--- 빌드 과정을 이해하기 위해서 그림을 그려보았어용
+![뭐지](세그트리-3.JPG)
+
+
+다음은 업데이트와 쿼리 이해그림 그리기 입니다....
