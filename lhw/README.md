@@ -1,12 +1,3 @@
 # Hi, Friends!
-## What do you want?
----
 
-- [Algorithms](etc/algorithms)
-- [Books](etc/books/python_algo_interview)
-
----
-- [Classes](etc/Classes)
-- [Dictionary](etc/Dictionary)
-> 수정 예정
-- [Exception](etc/Exception)
+# 힘이 들 땐 힘을 내자 할 건 해야지
